@@ -1,15 +1,6 @@
 my-legend {
   font-family: Arial, sans-serif;
-  // border: 1px solid #ccc;
-  // box-shadow: 1px 1px 1px #ccc;
   background-color: white;
-  // position: fixed;
-  // top: 10%;
-  // width: 850px;
-  // left: calc(50% - 175px);
-  // z-index: 1000;
-  // display: none;
-  padding: 16px;
 
   button {
     background-color: green;
@@ -23,39 +14,6 @@ my-legend {
     text-align: center;
     margin: 0 auto;
   }
-
-  ul {
-    list-style: none;
-    padding: 0;
-    display: inline-block;
-
-
-    li {
-       background: rgba(230, 230, 230, 1);
-       border-bottom: 1px solid rgba(200, 200, 200, 1);
-       padding : 0.5em 1em;
-       display: inline-block;
-       width: 100px;
-       box-sizing: border-box;
-
-       h3 {
-          // -webkit rules for Safari
-          -webkit-margin-before: 0.3em;
-          -webkit-margin-after: 0.3em;
-          line-height: 1.2em;
-          font-family: Verdana;
-          font-size: 1rem;
-       }
-
-       p {
-          line-height: 1.2em;
-          margin: 0 0 1em 0;
-          font-family: Verdana;
-          font-size: 1rem;
-       }
-    }
- }
-
 
   span {
     position: absolute;
@@ -72,13 +30,14 @@ my-legend {
   display: none;
 }
 
+#wrapper {
+  margin-top: 40px;
+}
+
 #holder {
   text-align: center;
-  // margin: 0 auto;
+  margin: 0 auto;
   width: 300px;
-  // position: relative;
-  // left: 50%;
-  // right: 50%;
 }
 
 .sample {
@@ -107,6 +66,11 @@ my-legend {
 
   h3 {
     text-align: center;
+  }
+
+  img {
+    display: block;
+    width: 100%;
   }
 }
 

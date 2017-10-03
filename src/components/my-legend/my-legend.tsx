@@ -11,23 +11,32 @@ export class MyLegend {
   // Array of legends
   public lists : Array<any> = [
     {  name: 'John Resig',
-       description: 'A tree of custom objects representing a part of the DOM which can be acted upon quicker than manipulating the DOM itself'
+       description: 'A tree of custom objects representing a part of the DOM which can be acted upon quicker than manipulating the DOM itself',
+       imageUrl: '/assets/images/john-resig.jpg'
     },
+
     {
-       name: 'Evans you',
-       description : 'Allows parts of a component state to be rendered asynchronously (I.e. via XHR)'
+      name : 'Christian Nwamba',
+      description : 'A superset of JavaScript providing strong typing and class based programming constructs',
+      imageUrl: '/assets/images/chris.jpg'
     },
+
+    {
+       name: 'Evan you',
+       description : 'Allows parts of a component state to be rendered asynchronously (I.e. via XHR)',
+       imageUrl: '/assets/images/evans.jpeg'
+    },
+
     {
        name : 'Otemuyiwa Prosper',
-       description : 'Allows data binding to be implemented through binding a state variable to an onChange event which allows the state to be changed as the input value changes'
+       description : 'Allows data binding to be implemented through binding a state variable to an onChange event which allows the state to be changed as the input value changes',
+       imageUrl: '/assets/images/prosper.jpg'
     },
-    {
-       name : 'Christian Nwamba',
-       description : 'A superset of JavaScript providing strong typing and class based programming constructs'
-    },
+
     {
        name : 'Wes Bos',
-       description : 'JavaScriptXML allows DOM nodes to be built with HTML-like syntax'
+       description : 'JavaScriptXML allows DOM nodes to be built with HTML-like syntax',
+       imageUrl: '/assets/images/wes bos.jpg'
     }
  ];
 
@@ -54,10 +63,10 @@ export class MyLegend {
 
   render() {
     return (
-      <div>
+      <div id="wrapper">
         <div id="holder">
           <p> JavaScript Legend</p>
-          <button onClick={() => this. toggleComponent()}>Show List</button>
+          <button onClick={() => this. toggleComponent()}>Toggle List</button>
         </div>
 
 	     <div class={ this.toggle ? 'active' : 'inactive' }>
@@ -66,7 +75,7 @@ export class MyLegend {
             <div class="card">
             <h3>{list.name}</h3>
             <p>{list.description}</p>
-            <img src="http://i.pravatar.cc/300" alt="Random Avatar"/>
+            <img src={list.imageUrl} alt="Random Avatar"/>
             </div>
           )}
 	     </div>
