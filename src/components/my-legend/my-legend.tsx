@@ -11,31 +11,31 @@ export class MyLegend {
   // Array of legends
   public lists : Array<any> = [
     {  name: 'John Resig',
-       description: 'A tree of custom objects representing a part of the DOM which can be acted upon quicker than manipulating the DOM itself',
+       description: 'John Resig is an American software engineer and entrepreneur, best known as the creator and lead developer of the jQuery JavaScript library',
        imageUrl: '/assets/images/john-resig.jpg'
     },
 
     {
       name : 'Christian Nwamba',
-      description : 'A superset of JavaScript providing strong typing and class based programming constructs',
+      description : 'JavaScript preacher. Building the web with the community. @ngnigeria organizer. #Webpack Ambassador. Advocacy for The Next Billion Users.',
       imageUrl: '/assets/images/chris.jpg'
     },
 
     {
        name: 'Evan you',
-       description : 'Allows parts of a component state to be rendered asynchronously (I.e. via XHR)',
+       description : 'Design, code & things in between. Living the dream working on @vuejs. Previously @meteorjs & @google, @parsonsamt alumnus.',
        imageUrl: '/assets/images/evans.jpeg'
     },
 
     {
        name : 'Otemuyiwa Prosper',
-       description : 'Allows data binding to be implemented through binding a state variable to an onChange event which allows the state to be changed as the input value changes',
+       description : 'Prosper is a full stack software engineer and writer who’s worked on biometric, health, financial and developer tools. He currently works with Auth0 as a Technical Writer.',
        imageUrl: '/assets/images/prosper.jpg'
     },
 
     {
        name : 'Wes Bos',
-       description : 'JavaScriptXML allows DOM nodes to be built with HTML-like syntax',
+       description : 'Wes Bos, a full stack web developer and designer from Hamilton, Canada. He loves to share what he knows through training products and teaching ',
        imageUrl: '/assets/images/wes bos.jpg'
     }
  ];
@@ -65,7 +65,7 @@ export class MyLegend {
     return (
       <div id="wrapper">
         <div id="holder">
-          <p> JavaScript Legend</p>
+          <p> JavaScript Legends</p>
           <button onClick={() => this. toggleComponent()}>Toggle List</button>
         </div>
 
