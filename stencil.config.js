@@ -7,7 +7,7 @@ exports.config = {
   ],
   serviceWorker: {
     globPatterns: [
-      '**/*.{js,css,json,html,ico,png}'
+      '**/*.{js,css,json,html,ico,png,jpg,jpeg}'
     ]
   }
 };
